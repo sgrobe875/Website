@@ -1,7 +1,66 @@
-<?php
-include 'top.php';
+!DOCTYPE html>
+<html lang="en">
 
-?>
+
+<head>
+    <title>Sarah Grobe | <?php print $pageName ?></title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Sarah Grobe">
+    <meta name="description" content="A personal website created for and by Sarah Grobe to assist in professional settings, such as job applications.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">
+</head>
+
+
+<nav>
+    <ol>
+        <li>
+            <a href="index.php">Top of Page</a>
+        </li>
+        <li>
+            <a href="#about">About Me</a>
+        </li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#work">My Experience</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+    
+                <div class="dropdown-content">
+                    <a href="#prof">Professional Experience</a>
+                    <a href="#other">Other Experience</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <a href="#analysis">Coding & Analysis</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="#proj">Projects</a>
+                    <a href="#code">Coding Samples</a>
+                    <a href="#writing">Writing Samples</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <a href="#contact">Contact Me</a>
+        </li>
+    </ol>
+
+</nav>
+
+
+
+
 <!-- ######################     Page header   ############################## -->
 <header>
     <h1>Welcome to my Personal Website!</h1>
@@ -277,13 +336,8 @@ include 'top.php';
     <p>Thanks so much for visiting!</p>
 
 
-    
-
-
-<?php
-print '<hr class = "hiddenLine">';
-
-print '</main>';
-
-include 'footer.php';
-?>
+    <footer>
+        <hr>
+        <p>Sarah Grobe 2023</p>
+    </footer>
+</html>
